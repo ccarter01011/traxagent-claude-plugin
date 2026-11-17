@@ -1,9 +1,24 @@
 {
   "name": "traxagent",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Ask Claude what your company spends on AI APIs and coding agents, by team, developer, model and API key, and ship the cost fixes TraxAgent finds.",
-  "author": { "name": "TraxAgent", "url": "https://www.traxagent.io" },
+  "author": {
+    "name": "TraxAgent",
+    "url": "https://www.traxagent.io"
+  },
   "homepage": "https://www.traxagent.io",
   "license": "MIT",
-  "keywords": ["ai spend", "cost", "finops", "claude code", "openai", "gemini", "budget", "caps", "mcp"]
+  "keywords": [
+    "ai spend",
+    "cost",
+    "finops",
+    "claude code",
+    "openai",
+    "gemini",
+    "budget",
+    "caps",
+    "mcp"
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://www.traxagent.io/privacy"
 }

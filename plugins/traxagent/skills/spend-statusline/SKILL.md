@@ -5,13 +5,6 @@ description: Show session cost and Claude Code 5-hour and weekly limit use in th
 
 # Spend in the status line
 
-TraxAgent's free status line shows the model, this session's cost, and 5-hour and weekly limit use. With a TraxAgent account it also shows the person's spend cap and the day they'll reach it at their current pace.
+TraxAgent's free status line shows the model, this session's cost, and 5-hour and weekly limit use. With a TraxAgent account it also shows the person's spend cap and the day they'll reach it at their current pace. The script only reads Claude Code's status-line input; without an account, nothing is sent anywhere.
 
-1. Explain what it does and that the script only reads Claude Code's status-line input; with no account, nothing is sent anywhere.
-2. With the user's OK, run:
-
-   ```bash
-   curl -fsSL https://www.traxagent.io/statusline/install.sh | bash
-   ```
-
-3. Tell them to restart Claude Code. The details are at https://www.traxagent.io/statusline.
+Don't run the installer yourself. Send the user to https://www.traxagent.io/statusline, where they can read the script and copy the one-line install command, and tell them to restart Claude Code after installing.
