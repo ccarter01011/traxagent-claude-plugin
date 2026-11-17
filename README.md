@@ -44,7 +44,7 @@ No account yet? [Set one up in about 5 minutes](https://www.traxagent.io/setup?r
 ## Look first, no sign-up (about 2 minutes each)
 
 1. [Free audit](https://www.traxagent.io/audit?ref=github-plugin): upload a usage CSV, no admin key needed. You get the findings on the spot, each with its monthly cost and the exact fix.
-2. [Speed Index](https://www.traxagent.io/speed?ref=github-plugin): race your own prompt across 8 Claude and OpenAI models.
+2. [Speed Index](https://www.traxagent.io/speed?ref=github-plugin): race your own prompt across 10 Claude and OpenAI models.
 3. [Demo](https://www.traxagent.io/demo?ref=github-plugin): see the whole product on sample data.
 
 ## Spend caps
