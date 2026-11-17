@@ -1,6 +1,6 @@
 {
   "name": "traxagent",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Ask Claude what your company spends on AI APIs and coding agents, by team, developer, model and API key, and ship the cost fixes TraxAgent finds.",
   "author": {
     "name": "TraxAgent",
@@ -20,5 +20,10 @@
     "mcp"
   ],
   "icon": ".claude-plugin/icon.png",
-  "privacyPolicyUrl": "https://www.traxagent.io/privacy"
+  "privacyPolicyUrl": "https://www.traxagent.io/privacy",
+  "displayName": "TraxAgent",
+  "supportUrl": "mailto:support@traxagent.io",
+  "repository": "https://github.com/ccarter01011/traxagent-claude-plugin",
+  "documentationUrl": "https://www.traxagent.io/integrations",
+  "termsOfServiceUrl": "https://www.traxagent.io/terms"
 }
