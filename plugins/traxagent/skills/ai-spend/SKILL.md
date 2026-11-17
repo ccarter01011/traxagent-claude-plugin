@@ -5,14 +5,14 @@ description: Answer questions about the company's AI spend (Claude, OpenAI, Gemi
 
 # AI spend with TraxAgent
 
-TraxAgent's MCP server (`traxagent`) is read-only. It returns spend at published list prices and fixes ranked by dollars a month.
+TraxAgent's MCP server (`ai-spend`) is read-only. It returns spend at published list prices and fixes ranked by dollars a month.
 
 ## If the tools aren't available
 
 The server signs in with OAuth. Tell the user:
 
 1. If they don't have a TraxAgent account, sign up at https://www.traxagent.io and connect a read-only admin key (about 5 minutes; see https://www.traxagent.io/setup). The MCP server is on paid plans.
-2. Run `/mcp` in Claude Code, pick `traxagent`, choose Authenticate, and allow read-only access in the browser.
+2. Run `/mcp` in Claude Code, pick `plugin:traxagent:ai-spend`, choose Authenticate, and allow read-only access in the browser.
 
 Never ask the user to paste a token into the chat.
 
