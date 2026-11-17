@@ -2,7 +2,7 @@
 
 **Who spent your AI budget last month, and on what?** Ask Claude, ChatGPT, Claude Code, Cursor or VS Code, and get the answer from your real usage.
 
-Your teams probably pay for AI in five places: the Anthropic, OpenAI and Gemini APIs, Claude Code or Codex, Cursor, and Claude or ChatGPT seats. Each vendor's console is correct about its own slice and blind to the rest.
+Your teams may pay for AI in 5 places or more: the Anthropic, OpenAI and Gemini APIs, Claude Code or Codex, Cursor, and Claude or ChatGPT seats. Each vendor's console is correct about its own slice and blind to the rest.
 
 [TraxAgent](https://www.traxagent.io/?ref=github-plugin) pulls them into one place every night, by team and by person. Then an AI review goes through your usage and tells you where you're overpaying. Each fix comes with what it costs you per month and the exact change to make. You walk into the budget meeting with the full number, where it went, and what you've already done to bring it down.
 
