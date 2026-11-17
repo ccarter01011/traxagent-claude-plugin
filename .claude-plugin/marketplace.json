@@ -1,0 +1,14 @@
+{
+  "name": "traxagent",
+  "owner": { "name": "TraxAgent", "url": "https://www.traxagent.io" },
+  "metadata": { "description": "TraxAgent plugins for Claude Code: AI spend, caps and cost fixes." },
+  "plugins": [
+    {
+      "name": "traxagent",
+      "source": "./plugins/traxagent",
+      "description": "Ask Claude what your company spends on AI APIs and coding agents, by team, developer, model and key, and ship the top cost fixes.",
+      "category": "productivity",
+      "keywords": ["ai spend", "cost", "finops", "claude code", "openai", "budget", "mcp"]
+    }
+  ]
+}

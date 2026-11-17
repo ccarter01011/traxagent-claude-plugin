@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "traxagent": {
+      "type": "http",
+      "url": "https://www.traxagent.io/mcp"
+    }
+  }
+}
