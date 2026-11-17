@@ -54,7 +54,7 @@ Every option below signs in with your TraxAgent account (OAuth). Access is read-
 |---|---|
 | **Claude** (web, desktop) | Settings → Connectors → **Add custom connector**. Name: TraxAgent. URL: `https://www.traxagent.io/mcp`. Then sign in. |
 | **ChatGPT** | Plugins → **Add** → **Add custom MCP server**. URL: `https://www.traxagent.io/mcp`, Authentication: OAuth. Create it, sign in, then mention **@TraxAgent** in a chat. |
-| **Cursor** | [**Add to Cursor**](https://cursor.com/en/install-mcp?name=traxagent&config=eyJ1cmwiOiJodHRwczovL3d3dy50cmF4YWdlbnQuaW8vbWNwIn0=), then sign in when Cursor asks. |
+| **Cursor** | [**Add to Cursor**](https://cursor.com/en/install-mcp?name=traxagent&config=eyJ1cmwiOiJodHRwczovL3d3dy50cmF4YWdlbnQuaW8vbWNwIn0=), then sign in when Cursor asks. Also on [Cursor Directory](https://cursor.directory/plugins/traxagent). |
 | **VS Code / GitHub Copilot** | [**Add to VS Code**](https://vscode.dev/redirect/mcp/install?name=traxagent&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fwww.traxagent.io%2Fmcp%22%7D), sign in, then use it from Copilot chat in agent mode. |
 | **Any MCP client** (Codex, Gemini CLI, Windsurf…) | Add `https://www.traxagent.io/mcp` as a remote (streamable HTTP) MCP server. Clients that support OAuth sign in. Others can send a read-only API token from [API and MCP](https://www.traxagent.io/app/api). |
 
