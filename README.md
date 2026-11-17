@@ -14,16 +14,21 @@ This repo is the Claude Code plugin. The same read-only server, `https://www.tra
 - **Ship the fixes.** "What's the biggest cost fix, and can you ship it here?" Claude pulls the fix's steps from TraxAgent, makes the change in your repo and opens a pull request that states the monthly saving.
 - **See spend while you work.** The spend status line shows this session's cost, your 5-hour and weekly Claude Code limit use, and, with an account, your spend cap and the day you'll reach it at your current pace.
 
-Example answer, from a real account:
+Example answer:
 
 ```
-AI spend, Nov 10–16: $26.89 total (about $3.84/day, list prices)
+AI spend, Nov 10–16: $1,943.27 total (about $277.61/day, list prices)
 
-| Team                 | Spend  |
-|----------------------|--------|
-| TraxAgent (internal) | $26.73 |
-| Unlabeled            | $0.10  |
-| Data science         | $0.06  |
+| Team                 | Spend   |
+|----------------------|---------|
+| Backend Team         | $126.73 |
+| FrontEnd Team        |  $98.10 |
+| Data Science         | $214.06 |
+| Viper Team           | $231.67 |
+| Atlas Team           |  $11.13 |
+| APIs (Prod)          | $431.28 |
+| APIs (other)         | $218.42 |
+| AWS Bedrock Seats    | $511.08 |
 
 Biggest open cost fix: none right now.
 ```
