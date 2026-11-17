@@ -15,7 +15,7 @@ Read-only. TraxAgent never sees prompts or outputs.
 /plugin install traxagent@traxagent
 ```
 
-Then run `/mcp`, pick `traxagent`, choose **Authenticate** and sign in to TraxAgent in your browser. No token to copy. (The MCP server is on TraxAgent's paid plans.)
+Then run `/mcp`, pick `plugin:traxagent:ai-spend`, choose **Authenticate** and sign in to TraxAgent in your browser. No token to copy. (The MCP server is on TraxAgent's paid plans.)
 
 ## Try it
 
