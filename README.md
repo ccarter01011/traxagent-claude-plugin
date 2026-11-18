@@ -1,6 +1,6 @@
 # TraxAgent: ask your AI tools about your AI spend
 
-[![GitHub stars](https://img.shields.io/github/stars/ccarter01011/traxagent-claude-plugin?style=social)](https://github.com/ccarter01011/traxagent-claude-plugin/stargazers) [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.traxagent%2Ftraxagent-blue)](https://registry.modelcontextprotocol.io) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.traxagent%2Ftraxagent-blue)](https://registry.modelcontextprotocol.io) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 **Who spent your AI budget last month, and on what?** Ask Claude, ChatGPT, Claude Code, Cursor or VS Code, and get the answer from your real usage.
 
