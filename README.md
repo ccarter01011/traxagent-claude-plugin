@@ -83,7 +83,7 @@ More detail: [Security](https://www.traxagent.io/security?ref=github-plugin) · 
 
 | Part | What it does |
 |---|---|
-| `ai-spend` MCP server | Read-only tools: `get_spend_summary`, `get_spend`, `list_fixes`, `get_fix_prompt`, `list_api_keys` |
+| `ai-spend` MCP server | Read-only tools: `get_spend_summary`, `get_spend`, `get_people_spend`, `list_fixes`, `get_fix_prompt`, `list_api_keys` |
 | `ai-spend` skill | Tells Claude how to answer spend questions and ship fixes as pull requests |
 | `spend-statusline` skill | Installs the TraxAgent status line, with your OK |
 
