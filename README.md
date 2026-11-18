@@ -1,6 +1,10 @@
 # TraxAgent: ask your AI tools about your AI spend
 
+[![GitHub stars](https://img.shields.io/github/stars/ccarter01011/traxagent-claude-plugin?style=social)](https://github.com/ccarter01011/traxagent-claude-plugin/stargazers) [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.traxagent%2Ftraxagent-blue)](https://registry.modelcontextprotocol.io) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 **Who spent your AI budget last month, and on what?** Ask Claude, ChatGPT, Claude Code, Cursor or VS Code, and get the answer from your real usage.
+
+![Asking Claude what each team spent on AI last week, answered by TraxAgent](https://raw.githubusercontent.com/ccarter01011/traxagent-claude-plugin/main/assets/demo.gif)
 
 Your teams may pay for AI in 5 places or more: the Anthropic, OpenAI and Gemini APIs, Claude Code or Codex, Cursor, and Claude or ChatGPT seats. Each vendor's console is correct about its own slice and blind to the rest.
 
@@ -17,7 +21,7 @@ This repo is the Claude Code plugin. The same read-only server, `https://www.tra
 Example answer:
 
 ```
-AI spend, Nov 10–16: $1,943.27 total (about $277.61/day, list prices)
+AI spend, Nov 10–16: $1,842.47 total (about $263.21/day, list prices)
 
 | Team                 | Spend   |
 |----------------------|---------|
@@ -43,6 +47,8 @@ In Claude Code:
 ```
 
 Then run `/mcp`, pick `plugin:traxagent:ai-spend`, choose **Authenticate** and sign in to TraxAgent in your browser. There's no token to copy. The MCP server is on TraxAgent's paid plans.
+
+If this saved you a budget meeting, a ⭐ on this repo helps other teams find it.
 
 No account yet? [Set one up in about 5 minutes](https://www.traxagent.io/setup?ref=github-plugin) by pasting a read-only admin key. TraxAgent is free up to $100 a month of AI spend.
 
