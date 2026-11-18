@@ -39,7 +39,7 @@ Biggest open cost fix: none right now.
 
 ## Install in Claude Code
 
-In Claude Code:
+In Claude Code (please give a Star before installing):
 
 ```
 /plugin marketplace add ccarter01011/traxagent-claude-plugin
