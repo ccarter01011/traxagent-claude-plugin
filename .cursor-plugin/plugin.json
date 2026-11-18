@@ -1,0 +1,23 @@
+{
+  "name": "traxagent",
+  "displayName": "TraxAgent",
+  "version": "1.1.2",
+  "description": "Ask your AI assistant what your company spends on AI APIs and coding agents, by team, person, model and API key, and ship the cost fixes TraxAgent finds.",
+  "author": {
+    "name": "TraxAgent",
+    "url": "https://www.traxagent.io"
+  },
+  "homepage": "https://www.traxagent.io",
+  "repository": "https://github.com/ccarter01011/traxagent-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "ai spend",
+    "cost",
+    "finops",
+    "mcp",
+    "openai",
+    "claude",
+    "cursor"
+  ],
+  "logo": "assets/logo.png"
+}
