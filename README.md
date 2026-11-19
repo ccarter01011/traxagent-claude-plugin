@@ -23,6 +23,7 @@ After installing (below):
 
 - **Ask about spend in plain English.** "What did we spend on AI last week, by team?" "Which API key is using the most Opus?" "Why did spend jump on Tuesday?"
 - **Ship the fixes.** "What's the biggest cost fix, and can you ship it here?" Claude pulls the fix's steps from TraxAgent, makes the change in your repo and opens a pull request that states the monthly saving.
+- **Check if the pricier model is worth it.** Tag tasks with an outcome, and the TraxAgent dashboard compares each model's success rate and cost per success by task type, such as code reviews on Opus versus Sonnet.
 - **See spend while you work.** The spend status line shows this session's cost, your 5-hour and weekly Claude Code limit use, and, with an account, your spend cap and the day you'll reach it at your current pace.
 
 Example answer:
