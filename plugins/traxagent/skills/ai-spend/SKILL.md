@@ -23,6 +23,7 @@ Never ask the user to paste a token into the chat.
 1. Call `get_spend_summary` first: totals, projected month, savings available, and the teams, providers and models you can filter by.
 2. Call `get_spend` with `group_by` (day, team, provider, model, key or tier) and filters to answer the question. Give dollars, and name the biggest driver.
 3. For "how do we cut this?", call `list_fixes` and lead with the largest open fix, its monthly saving and who owns it.
+4. For "is the pricier model worth it?" or "would a cheaper model do this job?", call `get_task_quality` (optionally with `task`). Lead with the verdict, the success rates and cost per success; never recommend a switch the verdict doesn't support.
 
 ## Shipping a fix in this repo
 

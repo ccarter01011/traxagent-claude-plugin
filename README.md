@@ -23,7 +23,7 @@ After installing (below):
 
 - **Ask about spend in plain English.** "What did we spend on AI last week, by team?" "Which API key is using the most Opus?" "Why did spend jump on Tuesday?"
 - **Ship the fixes.** "What's the biggest cost fix, and can you ship it here?" Claude pulls the fix's steps from TraxAgent, makes the change in your repo and opens a pull request that states the monthly saving.
-- **Check if the pricier model is worth it.** Tag tasks with an outcome, and the TraxAgent dashboard compares each model's success rate and cost per success by task type, such as code reviews on Opus versus Sonnet.
+- **Check if the pricier model is worth it.** "Does Sonnet do our code reviews as well as Opus?" Tag tasks with an outcome, and TraxAgent compares each model's success rate and cost per success by task type.
 - **See spend while you work.** The spend status line shows this session's cost, your 5-hour and weekly Claude Code limit use, and, with an account, your spend cap and the day you'll reach it at your current pace.
 
 Example answer:
@@ -99,7 +99,7 @@ More detail: [Security](https://www.traxagent.io/security?ref=github-plugin) · 
 |---|---|
 | `/spend-audit` command | Local Claude Code cost report from your session logs. No account, nothing sent |
 | `ai-spend-demo` MCP server | The same tools on a sample company, no sign-in |
-| `ai-spend` MCP server | Read-only tools: `get_spend_summary`, `get_spend`, `get_people_spend`, `list_fixes`, `get_fix_prompt`, `list_api_keys` |
+| `ai-spend` MCP server | Read-only tools: `get_spend_summary`, `get_spend`, `get_people_spend`, `list_fixes`, `get_fix_prompt`, `get_task_quality`, `list_api_keys` |
 | `ai-spend` skill | Tells Claude how to answer spend questions and ship fixes as pull requests |
 | `spend-statusline` skill | Installs the TraxAgent status line, with your OK |
 
