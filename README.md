@@ -1,4 +1,4 @@
-# TraxAgent: ask your AI tools about your AI spend
+# TraxAgent: ask your AI tools about your AI spend across multiple AIs and teams
 
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.traxagent%2Ftraxagent-blue)](https://registry.modelcontextprotocol.io) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
