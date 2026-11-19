@@ -1,7 +1,12 @@
 {
   "mcpServers": {
-    "traxagent": {
+    "ai-spend": {
+      "type": "http",
       "url": "https://www.traxagent.io/mcp"
+    },
+    "ai-spend-demo": {
+      "type": "http",
+      "url": "https://www.traxagent.io/mcp/demo"
     }
   }
 }

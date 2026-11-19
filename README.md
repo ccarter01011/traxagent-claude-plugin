@@ -12,6 +12,13 @@ Your teams may pay for AI in 5 places or more: the Anthropic, OpenAI and Gemini 
 
 This repo is the Claude Code plugin. The same read-only server, `https://www.traxagent.io/mcp`, also works in Claude, ChatGPT, Cursor, VS Code and any MCP client: see [Use it in other AI tools](#use-it-in-other-ai-tools).
 
+## Try it in 30 seconds, no account
+
+After installing (below):
+
+- **`/traxagent:spend-audit`** shows what your own Claude Code use costs at API prices, by model, project, day and session, plus your cache hit rate and what one model tier down would save. It reads Claude Code's local logs and sends nothing anywhere.
+- **Ask about a sample company:** "Using TraxAgent demo, what did we spend on AI last week by team?" The `ai-spend-demo` server answers from sample data with no sign-in, so you can see every tool before connecting your own.
+
 ## What you can do
 
 - **Ask about spend in plain English.** "What did we spend on AI last week, by team?" "Which API key is using the most Opus?" "Why did spend jump on Tuesday?"
@@ -39,7 +46,7 @@ Biggest open cost fix: none right now.
 
 ## Install in Claude Code
 
-In Claude Code (please give a Star before installing):
+In Claude Code:
 
 ```
 /plugin marketplace add ccarter01011/traxagent-claude-plugin
@@ -81,7 +88,7 @@ Some companies now cap each engineer's AI spend by day, week or month. If leader
 - **Read-only.** TraxAgent reads usage reports with read-only admin keys. Neither the keys nor this plugin can change anything at your providers.
 - **No prompts or outputs.** TraxAgent never receives what you send to models, only usage and cost.
 - **OAuth sign-in.** The plugin connects with OAuth 2.1 (PKCE), using short-lived tokens. You can disconnect any app under **API and MCP → Connected apps**.
-- **Open plugin.** Everything this plugin does is in this repo: one MCP server address and two skills.
+- **Open plugin.** Everything this plugin does is in this repo: two MCP server addresses, two skills, and one local script you can read in `plugins/traxagent/scripts/`.
 
 More detail: [Security](https://www.traxagent.io/security?ref=github-plugin) · [Privacy](https://www.traxagent.io/privacy?ref=github-plugin) · [How it works](https://www.traxagent.io/integrations?ref=github-plugin)
 
@@ -89,6 +96,8 @@ More detail: [Security](https://www.traxagent.io/security?ref=github-plugin) · 
 
 | Part | What it does |
 |---|---|
+| `/spend-audit` command | Local Claude Code cost report from your session logs. No account, nothing sent |
+| `ai-spend-demo` MCP server | The same tools on a sample company, no sign-in |
 | `ai-spend` MCP server | Read-only tools: `get_spend_summary`, `get_spend`, `get_people_spend`, `list_fixes`, `get_fix_prompt`, `list_api_keys` |
 | `ai-spend` skill | Tells Claude how to answer spend questions and ship fixes as pull requests |
 | `spend-statusline` skill | Installs the TraxAgent status line, with your OK |

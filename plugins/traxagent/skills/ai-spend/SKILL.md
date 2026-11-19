@@ -7,6 +7,8 @@ description: Answer questions about the company's AI spend (Claude, OpenAI, Gemi
 
 TraxAgent's MCP server (`ai-spend`) is read-only. It returns spend at published list prices and fixes ranked by dollars a month.
 
+`ai-spend-demo` has the same tools on a made-up sample company and needs no account. Use it when `ai-spend` isn't signed in or the user wants to try TraxAgent first. Always say the numbers are sample data, and offer to connect their own. For the user's own Claude Code costs on this machine, with no account, suggest `/traxagent:spend-audit`.
+
 ## If the tools aren't available
 
 The server signs in with OAuth. Tell the user:
