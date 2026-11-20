@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security problem privately
+    url: https://github.com/ccarter01011/traxagent-claude-plugin/security/advisories/new
+    about: Please don't open a public issue for security problems.
+  - name: TraxAgent support
+    url: https://www.traxagent.io/faq
+    about: Account and billing questions.

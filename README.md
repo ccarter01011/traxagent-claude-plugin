@@ -1,6 +1,6 @@
 # TraxAgent: ask your AI tools about your AI spend across multiple AIs and teams
 
-[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.traxagent%2Ftraxagent-blue)](https://registry.modelcontextprotocol.io)  [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/ccarter01011/traxagent-claude-plugin)  [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.traxagent%2Ftraxagent-blue)](https://registry.modelcontextprotocol.io)  [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/ccarter01011/traxagent-claude-plugin)  [![check](https://github.com/ccarter01011/traxagent-claude-plugin/actions/workflows/check.yml/badge.svg)](https://github.com/ccarter01011/traxagent-claude-plugin/actions/workflows/check.yml)  [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)  ![Read-only](https://img.shields.io/badge/tools-read--only-blue)
 
 **Who spent your AI budget last month, and on what?** Ask Claude, ChatGPT, Claude Code, Cursor, Gemini or VS Code, and get the answer from your real usage.
 
@@ -106,3 +106,7 @@ More detail: [Security](https://www.traxagent.io/security?ref=github-plugin) · 
 ## License
 
 MIT. Questions: [traxagent.io](https://www.traxagent.io/?ref=github-plugin)
+
+## Security and privacy
+
+Every tool is read-only, the plugin has no hooks, and the local `/spend-audit` script sends nothing anywhere. TraxAgent never sees prompts or model outputs. CI checks these rules on every push. Details and how to report a problem: [SECURITY.md](SECURITY.md).
