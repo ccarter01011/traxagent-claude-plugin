@@ -29,6 +29,12 @@ After installing (below):
 - **Check if the pricier model is worth it.** "Does Sonnet do our code reviews as well as Opus?" Tag tasks with an outcome, and TraxAgent compares each model's success rate and cost per success by task type.
 - **See spend while you work.** The spend status line shows this session's cost, your 5-hour and weekly Claude Code limit use, and, with an account, your spend cap and the day you'll reach it at your current pace.
 
+<a href="https://www.traxagent.io/demodashboard?ref=github-plugin"><img src="https://raw.githubusercontent.com/ccarter01011/traxagent-claude-plugin/main/assets/platform.gif" width="420" align="right" alt="The TraxAgent dashboard on sample data: overview, recommendations, cost explorer, developers, AI registry and the AI assistant"></a>
+
+**Behind the plugin is a full dashboard.** The answers come from [TraxAgent](https://www.traxagent.io/?ref=github-plugin), which also has a dashboard for your team: spend by team and person, fixes ranked in dollars, budgets and caps, an AI registry, and finance reports. [Click around the demo](https://www.traxagent.io/demodashboard?ref=github-plugin), no sign-up.
+
+<br clear="right">
+
 Example answer:
 
 ```
