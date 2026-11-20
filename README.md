@@ -4,7 +4,9 @@
 
 **Who spent your AI budget last month, and on what?** Ask Claude, ChatGPT, Claude Code, Cursor, Gemini or VS Code, and get the answer from your real usage.
 
-![Asking Claude what each team spent on AI last week, answered by TraxAgent](https://raw.githubusercontent.com/ccarter01011/traxagent-claude-plugin/main/assets/demo.gif)
+![Asking Claude what each team spent on AI last week, then which cost cuts it recommends, answered by TraxAgent](https://raw.githubusercontent.com/ccarter01011/traxagent-claude-plugin/main/assets/demo.gif)
+
+*Two questions, answered from the sample company: what each team spent last week, then which cost cuts to make first. The second answer ranks the fixes by effort, not just by size, so the safe config changes come before the ones that need a quality test.*
 
 Your teams may pay for AI in 5 places or more: the Anthropic, OpenAI and Gemini APIs, Claude Code or Codex, Cursor, and Claude or ChatGPT seats. Each vendor's console is correct about its own slice and blind to the rest.
 
@@ -21,6 +23,7 @@ After installing (below):
 
 ## What you can do
 
+- **Get a ranked savings plan.** "What cost cuts do you recommend across our AI spend?" TraxAgent groups every fix it found by kind, puts the no-risk changes first (Batch API for scheduled jobs, newer model versions at a lower price), then the bigger ones that need a check (prompt caching, a cheaper model where your own outcomes show it does as well), each with its monthly range.
 - **Ask about spend in plain English.** "What did we spend on AI last week, by team?" "Which API key is using the most Opus?" "Why did spend jump on Tuesday?"
 - **Ship the fixes.** "What's the biggest cost fix, and can you ship it here?" Claude pulls the fix's steps from TraxAgent, makes the change in your repo and opens a pull request that states the monthly saving.
 - **Check if the pricier model is worth it.** "Does Sonnet do our code reviews as well as Opus?" Tag tasks with an outcome, and TraxAgent compares each model's success rate and cost per success by task type.
@@ -44,6 +47,35 @@ AI spend, Nov 10–16: $1,842.47 total (about $263.21/day, list prices)
 
 Biggest open cost fix: none right now.
 ```
+
+And the savings question, on the sample company:
+
+```
+You: Using TraxAgent: what cost cuts do you recommend across our AI spend?
+
+$9.2k–18.7k a month of $39.0k is avoidable. Ranked by effort, not size:
+
+1. Batch API for 2 nightly Data jobs   $2.8k–4.0k   runs at 01:00 UTC, no one waits
+2. Newer versions: Sonnet 4.6 → 5.5     $1.9k–3.4k   cheaper per token, same family
+3. Opus → Sonnet for CI code review     $772         85% vs 86% success, half the cost
+4. Prompt caching on 16 keys            $5.1k–14.1k  hit rate under 30% on most
+
+Do the first two this week: config changes with no quality risk.
+Caching is the big prize, and one key's cache broke on Nov 6.
+```
+
+### More questions worth asking
+
+| Ask | What you get |
+|---|---|
+| "What cost cuts do you recommend across our AI spend?" | Every fix grouped by kind and ranked by effort, with the monthly range and the safe ones first |
+| "Which fix should we ship first, and can you do it here?" | The steps for the top fix; Claude makes the change in this repo and opens a pull request with the saving |
+| "Is Opus worth it for our code reviews, or would Sonnet do?" | Success rate and cost per success for each model on that task, from your own outcomes |
+| "Why did AI spend jump on Tuesday?" | The key, model and team behind the jump, and whether a cache broke or a loop ran away |
+| "Who are our top 10 AI spenders this month, across Claude Code, Codex and Cursor?" | Spend per person with their team and a split by tool |
+| "Which AI tools have no owner or aren't approved?" | The AI registry: every key, coding agent, seat plan and app in use, with what needs a look |
+| "Which API keys haven't been used in 30 days?" | Keys to revoke, from the registry's last-used dates |
+| "If we moved this traffic to Sonnet 5.5, what would it cost?" | Last month's real usage replayed at the other model's list prices |
 
 ## Install in Claude Code
 
