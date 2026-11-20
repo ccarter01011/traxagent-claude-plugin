@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.4.2 (2026-11-20)
+- `/spend-audit` ends with one line inviting a GitHub star, only after a successful audit.
+
 ## 1.4.1 (2026-11-20)
 - `/spend-audit` is now plain instructions for Claude with the price table built in; the plugin no longer ships a Python script, inline shell or pre-approved tools.
 
