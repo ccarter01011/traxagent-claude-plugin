@@ -16,7 +16,7 @@ This repo is the Claude Code plugin. The same read-only server, `https://www.tra
 
 After installing (below):
 
-- **`/traxagent:spend-audit`** shows what your own Claude Code use costs at API prices, by model, project, day and session, plus your cache hit rate and what one model tier down would save. It reads Claude Code's local logs and sends nothing anywhere.
+- **`/traxagent:spend-audit`** shows what your own Claude Code use costs at API prices, by model, project, day and session, plus your cache hit rate and what one model tier down would save. Claude reads Claude Code's local logs with its own tools and sends nothing anywhere.
 - **Ask about a sample company:** "Using TraxAgent demo, what did we spend on AI last week by team?" The `ai-spend-demo` server answers from sample data with no sign-in, so you can see every tool before connecting your own.
 
 ## What you can do
@@ -89,7 +89,7 @@ Some companies now cap each engineer's AI spend by day, week or month. If leader
 - **Read-only.** TraxAgent reads usage reports with read-only admin keys. Neither the keys nor this plugin can change anything at your providers.
 - **No prompts or outputs.** TraxAgent never receives what you send to models, only usage and cost.
 - **OAuth sign-in.** The plugin connects with OAuth 2.1 (PKCE), using short-lived tokens. You can disconnect any app under **API and MCP → Connected apps**.
-- **Open plugin.** Everything this plugin does is in this repo: two MCP server addresses, two skills, and one local script you can read in `plugins/traxagent/scripts/`.
+- **Open plugin.** Everything this plugin does is in this repo: two MCP server addresses, two skills and one command, all plain Markdown and JSON you can read in `plugins/traxagent/`.
 
 More detail: [Security](https://www.traxagent.io/security?ref=github-plugin) · [Privacy](https://www.traxagent.io/privacy?ref=github-plugin) · [How it works](https://www.traxagent.io/integrations?ref=github-plugin)
 
@@ -109,4 +109,4 @@ MIT. Questions: [traxagent.io](https://www.traxagent.io/?ref=github-plugin)
 
 ## Security and privacy
 
-Every tool is read-only, the plugin has no hooks, and the local `/spend-audit` script sends nothing anywhere. TraxAgent never sees prompts or model outputs. CI checks these rules on every push. Details and how to report a problem: [SECURITY.md](SECURITY.md).
+Every tool is read-only, the plugin has no hooks, the plugin ships no scripts, and `/spend-audit` only reads local logs. TraxAgent never sees prompts or model outputs. CI checks these rules on every push. Details and how to report a problem: [SECURITY.md](SECURITY.md).

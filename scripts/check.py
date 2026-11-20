@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Checks run in CI on every push: manifests parse, versions match, MCP servers are HTTPS on traxagent.io,
 the local audit script uses no network modules, and every skill has a name and description."""
-import ast, glob, json, re, sys
+import ast, glob, json, os, re, sys
 
 errors = []
 manifests = sorted(set(glob.glob("**/plugin.json", recursive=True, include_hidden=True) + glob.glob(".claude-plugin/marketplace.json", include_hidden=True) + glob.glob("**/.mcp.json", recursive=True, include_hidden=True)))
@@ -33,6 +33,13 @@ for p in glob.glob("**/SKILL.md", recursive=True, include_hidden=True):
     head = open(p).read().split("---")
     if len(head) < 3 or "name:" not in head[1] or "description:" not in head[1]:
         errors.append(f"{p}: missing name or description in front matter")
+for p in glob.glob("plugins/**/*", recursive=True, include_hidden=True):
+    if os.path.isfile(p) and not re.search(r"\.(md|txt|json|ya?ml|png|jpe?g|gif|webp|ico)$", p, re.I):
+        errors.append(f"{p}: only Markdown, text, JSON, YAML and images may ship in the plugin folder")
+    elif p.endswith(".md") and os.path.isfile(p):
+        t = open(p, encoding="utf-8").read()
+        if re.search(r"^allowed-tools:", t, re.M) or "!`" in t:
+            errors.append(f"{p}: no allowed-tools or inline shell (the directory refuses them from unverified organizations)")
 if [h for h in glob.glob("**/hooks/*", recursive=True, include_hidden=True) if not h.startswith(".git/")] or any("hooks" in d for d in data.values()):
     errors.append("hooks found; this plugin ships none")
 print("\n".join(errors) or f"ok: {len(data)} manifests, version {next(iter(set(versions.values())), '?')}")

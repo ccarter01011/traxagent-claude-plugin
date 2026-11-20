@@ -11,4 +11,3 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 scripts/check.py
-      - run: python3 -m py_compile plugins/traxagent/scripts/spend_audit.py
