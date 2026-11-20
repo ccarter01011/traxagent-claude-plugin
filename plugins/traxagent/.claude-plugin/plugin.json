@@ -1,6 +1,6 @@
 {
   "name": "traxagent",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Ask Claude what your company spends on AI APIs and coding agents, by team, developer, model and API key, and ship the cost fixes TraxAgent finds.",
   "author": {
     "name": "TraxAgent",

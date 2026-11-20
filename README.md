@@ -99,7 +99,7 @@ More detail: [Security](https://www.traxagent.io/security?ref=github-plugin) · 
 |---|---|
 | `/spend-audit` command | Local Claude Code cost report from your session logs. No account, nothing sent |
 | `ai-spend-demo` MCP server | The same tools on a sample company, no sign-in |
-| `ai-spend` MCP server | Read-only tools: `get_spend_summary`, `get_spend`, `get_people_spend`, `list_fixes`, `get_fix_prompt`, `get_task_quality`, `list_api_keys` |
+| `ai-spend` MCP server | Read-only tools: `get_spend_summary`, `get_spend`, `get_people_spend`, `list_fixes`, `get_fix_prompt`, `get_task_quality`, `get_ai_registry`, `list_api_keys` |
 | `ai-spend` skill | Tells Claude how to answer spend questions and ship fixes as pull requests |
 | `spend-statusline` skill | Installs the TraxAgent status line, with your OK |
 
