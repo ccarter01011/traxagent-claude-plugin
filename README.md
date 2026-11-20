@@ -1,6 +1,6 @@
 # TraxAgent: ask your AI tools about your AI spend across multiple AIs and teams
 
-[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.traxagent%2Ftraxagent-blue)](https://registry.modelcontextprotocol.io) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.traxagent%2Ftraxagent-blue)](https://registry.modelcontextprotocol.io)  [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/ccarter01011/traxagent-claude-plugin)  [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 **Who spent your AI budget last month, and on what?** Ask Claude, ChatGPT, Claude Code, Cursor, Gemini or VS Code, and get the answer from your real usage.
 
