@@ -25,6 +25,7 @@ Never ask the user to paste a token into the chat.
 3. For "how do we cut this?", call `list_fixes` and lead with the largest open fix, its monthly saving and who owns it.
 4. For "is the pricier model worth it?" or "would a cheaper model do this job?", call `get_task_quality` (optionally with `task`). Lead with the verdict, the success rates and cost per success; never recommend a switch the verdict doesn't support.
 5. For "which AI tools do we use?", "who owns this key?" or "what isn't approved?", call `get_ai_registry` (optionally with `search`, `needs` or `status`). Name the items that need a look first: no owner, not reviewed, or in use but not approved.
+6. For Claude Ship (Code Review, PR Steward, Approvals) costs, call `check_ship_policy`. If the repo has `.claude/approvals.yml`, pass its text: the tool flags rules that start billed reviews or model calls, classifiers with no budget, and observe mode (still billed). It also returns the spend-limit checklist. Anthropic has no API for Ship spend, so for forecasts point to https://www.traxagent.io/app/ship.
 
 ## Shipping a fix in this repo
 
